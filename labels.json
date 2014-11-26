@@ -1,0 +1,50 @@
+[
+  {
+    "name": "backend",
+    "color": "5319e7"
+  },
+  {
+    "name": "bug",
+    "color": "fc2929"
+  },
+  {
+    "name": "design",
+    "color": "bfdadc"
+  },
+  {
+    "name": "duplicate",
+    "color": "cccccc"
+  },
+  {
+    "name": "enhancement",
+    "color": "84b6eb"
+  },
+  {
+    "name": "frontend",
+    "color": "fbca04"
+  },
+  {
+    "name": "help wanted",
+    "color": "159818"
+  },
+  {
+    "name": "invalid",
+    "color": "cccccc"
+  },
+  {
+    "name": "layout",
+    "color": "bfe5bf"
+  },
+  {
+    "name": "proposal",
+    "color": "fad8c7"
+  },
+  {
+    "name": "question",
+    "color": "cc317c"
+  },
+  {
+    "name": "wontfix",
+    "color": "ffffff"
+  }
+]
