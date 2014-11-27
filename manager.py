@@ -1,14 +1,16 @@
 #!/usr/bin/env python
 
 import sys
+import json
+# import inquirer
 import getpass
+# import re
 
 try:
     import requests
 except:
     sys.exit('Please install requests module: pip install requests')
 
-import json
 
 API_TEMPLATE_URL = 'https://api.github.com/repos/{user}/{repo}/labels'
 REPO_TEMPLATE_URL = 'https://github.com/{user}/{repo}/labels'
@@ -72,6 +74,20 @@ def main(user, password, repo, organization=None):
     print 'All OK. Check your labels here: {}'.format(manager.repoURL)
 
 if __name__ == '__main__':
+
+    # questions = [
+    #     inquirer.Text('user', message='Please enter your github username'),
+    #     inquirer.Password('password', message='Please enter your password'),
+    #     inquirer.Text('repo', message='Please enter the repo name'),
+    #     inquirer.Checkbox('topics', message='Please define your type of project?', choices=['common', 'backend', 'frontend'], ),
+    #     inquirer.Text('organization', message='If this is a repo from a organization please enter the organization name, if not just leave this blank'),
+    #     inquirer.Confirm('correct',  message='This will delete all your current labels and create a new ones. Continue?', default=False),
+    # ]
+
+    # answers = inquirer.prompt(questions)
+
+    # print answers
+
     user = raw_input('Please enter your github username: ')
     password = getpass.getpass('Please enter your github password: ')
     repo = raw_input('Please enter the repo name: ')

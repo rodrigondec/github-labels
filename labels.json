@@ -1,38 +1,38 @@
 [
   {
-    "name": "backend",
+    "name": "php",
     "color": "5319e7"
   },
   {
-    "name": "bug",
+    "name": "javascript",
     "color": "fc2929"
   },
   {
-    "name": "design",
+    "name": "html+css",
     "color": "bfdadc"
   },
   {
-    "name": "duplicate",
+    "name": "design",
     "color": "cccccc"
   },
   {
-    "name": "enhancement",
+    "name": "texts",
     "color": "84b6eb"
   },
   {
-    "name": "frontend",
+    "name": "media",
     "color": "fbca04"
   },
   {
-    "name": "help wanted",
+    "name": "testing",
     "color": "159818"
   },
   {
-    "name": "invalid",
+    "name": "enhancement",
     "color": "cccccc"
   },
   {
-    "name": "layout",
+    "name": "bug",
     "color": "bfe5bf"
   },
   {
@@ -46,5 +46,29 @@
   {
     "name": "wontfix",
     "color": "ffffff"
+  },
+  {
+    "name": "help wanted",
+    "color": "ffffff"
+  },
+  {
+    "name": "waiting",
+    "color": "fbca04"
+  },
+  {
+    "name": "duplicate",
+    "color": "159818"
+  },
+  {
+    "name": "invalid",
+    "color": "cccccc"
+  },
+  {
+    "name": "wontfix",
+    "color": "bfe5bf"
+  },
+  {
+    "name": "meta issue",
+    "color": "000000"
   }
 ]
