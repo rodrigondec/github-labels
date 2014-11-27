@@ -15,60 +15,72 @@ REPO_TEMPLATE_URL = 'https://github.com/{user}/{repo}/labels'
 LABELS_FILE = 'labels.json'
 
 
+class LabelAPIError(Exception):
+    '''Base exception for errors'''
+    def __init__(self, message):
+        self.message = message
+
+    def __str__(self):
+        return 'API Error: {}'.format(self.message)
+
+
 class LabelManager(object):
     ''' Handles Github Label API '''
     def __init__(self, u, p, r, o):
-        self.labels = json.loads(open(LABELS_FILE).read())
         self.auth = (u, p)
-        self.baseUrl = API_TEMPLATE_URL.format(user=o if o else u, repo=r)
 
-    def getLabels(self):
-        r = requests.get(self.baseUrl, auth=self.auth)
+        self.apiURL = API_TEMPLATE_URL.format(user=o if o else u, repo=r)
+        self.repoURL = REPO_TEMPLATE_URL.format(user=o if o else u, repo=r)
+
+    def getAllLabels(self):
+        r = requests.get(self.apiURL, auth=self.auth)
         if r.status_code != 200:
-            error = 'Error getting labels: {0}'.format(r.text)
-            sys.exit(error)
+            raise LabelAPIError(r.json()['message'])
 
         return r.json()
 
-    def setLabels(self):
-        for label in self.labels:
-            r = requests.post(self.baseUrl, data=json.dumps(label),
-                              auth=self.auth)
+    def createLabel(self, labelObject):
+        r = requests.post(self.apiURL, data=json.dumps(labelObject),
+                          auth=self.auth)
 
-            if r.status_code != 201:
-                error = 'Error creating label: {0}'.format(r.text)
-                sys.exit(error)
+        if r.status_code != 201:
+            raise LabelAPIError(r.json()['message'])
 
-    def deleteLabels(self):
-        for label in self.getLabels():
-            r = requests.delete(label['url'], auth=self.auth)
-            if r.status_code != 204:
-                error = 'Error deleting label: {0}'.format(r.text)
-                sys.exit(error)
+    def deleteLabel(self, labelURL):
+        r = requests.delete(labelURL, auth=self.auth)
+        if r.status_code != 204:
+            raise LabelAPIError(r.json()['message'])
 
 
 def main(user, password, repo, organization=None):
     manager = LabelManager(user, password, repo, organization)
-    manager.deleteLabels()
-    manager.setLabels()
 
-    repo_url = REPO_TEMPLATE_URL.format(user=organization if organization
-                                        else user, repo=repo)
+    print
+    print 'Deleting current Labels'
+    for label in manager.getAllLabels():
+        manager.deleteLabel(label['url'])
+
+    print 'Creating new labels'
+
+    newLabels = json.loads(open(LABELS_FILE).read())
+
+    for label in newLabels:
+        manager.createLabel(label)
 
     print
     print '---'
-    print 'Everything OK. Check your new repo labels here: {}'.format(repo_url)
+    print 'All OK. Check your labels here: {}'.format(manager.repoURL)
 
 if __name__ == '__main__':
     user = raw_input('Please enter your github username: ')
     password = getpass.getpass('Please enter your github password: ')
     repo = raw_input('Please enter the repo name: ')
-    organization = raw_input('If this is a repo from a organization please \
-                              enter the organization name, if not just press \
-                              enter: ')
+    organization = raw_input('''If this is a repo from a organization please
+                              enter the organization name, if not just press
+                              enter: ''')
 
-    sure = raw_input('\nPlease enter the word CHANGE to continue. This will \
-                      delete all your current labels and create a new ones: ')
+    sure = raw_input('''\nPlease enter the word CHANGE to continue. This will
+                     delete all your current labels and create a new ones: ''')
 
     if sure.upper() != 'CHANGE':
         sys.exit('Bye')
