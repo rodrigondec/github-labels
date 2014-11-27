@@ -75,12 +75,9 @@ if __name__ == '__main__':
     user = raw_input('Please enter your github username: ')
     password = getpass.getpass('Please enter your github password: ')
     repo = raw_input('Please enter the repo name: ')
-    organization = raw_input('''If this is a repo from a organization please
-                              enter the organization name, if not just press
-                              enter: ''')
+    organization = raw_input('If this is a repo from a organization please enter the organization name, if not just press enter: ')
 
-    sure = raw_input('''\nPlease enter the word CHANGE to continue. This will
-                     delete all your current labels and create a new ones: ''')
+    sure = raw_input('\nPlease enter the word CHANGE to continue. This will delete all your current labels and create a new ones: ')
 
     if sure.upper() != 'CHANGE':
         sys.exit('Bye')
