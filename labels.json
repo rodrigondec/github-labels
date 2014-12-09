@@ -1,5 +1,25 @@
 [
   {
+    "name": "meta issue",
+    "color": "000000"
+  },
+  {
+    "name": "S",
+    "color": "000000"
+  },
+  {
+    "name": "M",
+    "color": "000000"
+  },
+  {
+    "name": "L",
+    "color": "000000"
+  },
+  {
+    "name": "XL",
+    "color": "000000"
+  },
+  {
     "name": "php",
     "color": "5319e7"
   },
@@ -28,10 +48,6 @@
     "color": "159818"
   },
   {
-    "name": "enhancement",
-    "color": "cccccc"
-  },
-  {
     "name": "bug",
     "color": "bfe5bf"
   },
@@ -44,31 +60,15 @@
     "color": "cc317c"
   },
   {
-    "name": "wontfix",
-    "color": "ffffff"
-  },
-  {
-    "name": "help wanted",
-    "color": "ffffff"
-  },
-  {
     "name": "waiting",
     "color": "fbca04"
   },
   {
-    "name": "duplicate",
-    "color": "159818"
+    "name": "wontfix",
+    "color": "ffffff"
   },
   {
     "name": "invalid",
     "color": "cccccc"
-  },
-  {
-    "name": "wontfix",
-    "color": "bfe5bf"
-  },
-  {
-    "name": "meta issue",
-    "color": "000000"
   }
 ]
