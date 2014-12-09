@@ -2,14 +2,12 @@
 
 import sys
 import json
-# import inquirer
-import getpass
-# import re
 
 try:
+    import inquirer
     import requests
 except:
-    sys.exit('Please install requests module: pip install requests')
+    sys.exit('Please install dependencies: pip install -r requirements.txt')
 
 
 API_TEMPLATE_URL = 'https://api.github.com/repos/{user}/{repo}/labels'
@@ -75,30 +73,31 @@ def main(user, password, repo, organization=None):
 
 if __name__ == '__main__':
 
-    # questions = [
-    #     inquirer.Text('user', message='Please enter your github username'),
-    #     inquirer.Password('password', message='Please enter your password'),
-    #     inquirer.Text('repo', message='Please enter the repo name'),
-    #     inquirer.Checkbox('topics', message='Please define your type of project?', choices=['common', 'backend', 'frontend'], ),
-    #     inquirer.Text('organization', message='If this is a repo from a organization please enter the organization name, if not just leave this blank'),
-    #     inquirer.Confirm('correct',  message='This will delete all your current labels and create a new ones. Continue?', default=False),
-    # ]
+    questions = [
+        inquirer.Text('user', message='Please enter your github username'),
+        inquirer.Password('password', message='Please enter your password'),
+        inquirer.Text('repo', message='Please enter the repo name'),
+        inquirer.Checkbox('topics', message='Please define your type of project?', choices=['common', 'backend', 'frontend'], ),
+        inquirer.Text('organization', message='If this is a repo from a organization please enter the organization name, if not just leave this blank'),
+        inquirer.Confirm('correct',  message='This will delete all your current labels and create a new ones. Continue?', default=False),
+    ]
 
-    # answers = inquirer.prompt(questions)
+    answers = inquirer.prompt(questions)
 
-    # print answers
+    print 'Debug:'
+    print answers
 
-    user = raw_input('Please enter your github username: ')
-    password = getpass.getpass('Please enter your github password: ')
-    repo = raw_input('Please enter the repo name: ')
-    organization = raw_input('If this is a repo from a organization please enter the organization name, if not just press enter: ')
+    # user = raw_input('Please enter your github username: ')
+    # password = getpass.getpass('Please enter your github password: ')
+    # repo = raw_input('Please enter the repo name: ')
+    # organization = raw_input('If this is a repo from a organization please enter the organization name, if not just press enter: ')
 
-    sure = raw_input('\nPlease enter the word CHANGE to continue. This will delete all your current labels and create a new ones: ')
+    # sure = raw_input('\nPlease enter the word CHANGE to continue. This will delete all your current labels and create a new ones: ')
 
-    if sure.upper() != 'CHANGE':
-        sys.exit('Bye')
+    # if sure.upper() != 'CHANGE':
+    #     sys.exit('Bye')
 
-    if user == '' or password == '' or repo == '':
-        sys.exit('Invalid input')
+    # if user == '' or password == '' or repo == '':
+    #     sys.exit('Invalid input')
 
-    main(user, password, repo, organization)
+    # main(user, password, repo, organization)
