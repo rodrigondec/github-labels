@@ -2,6 +2,7 @@
 
 import sys
 import json
+import re
 
 try:
     import inquirer
@@ -52,7 +53,7 @@ class LabelManager(object):
             raise LabelAPIError(r.json()['message'])
 
 
-def main(user, password, repo, organization=None):
+def main(user, password, repo, topics, organization=None):
     manager = LabelManager(user, password, repo, organization)
 
     print
@@ -65,7 +66,8 @@ def main(user, password, repo, organization=None):
     newLabels = json.loads(open(LABELS_FILE).read())
 
     for label in newLabels:
-        manager.createLabel(label)
+        if any(x in topics for x in label['topics']):
+            manager.createLabel(label)
 
     print
     print '---'
@@ -74,30 +76,34 @@ def main(user, password, repo, organization=None):
 if __name__ == '__main__':
 
     questions = [
-        inquirer.Text('user', message='Please enter your github username'),
-        inquirer.Password('password', message='Please enter your password'),
-        inquirer.Text('repo', message='Please enter the repo name'),
-        inquirer.Checkbox('topics', message='Please define your type of project?', choices=['common', 'backend', 'frontend'], ),
-        inquirer.Text('organization', message='If this is a repo from a organization please enter the organization name, if not just leave this blank'),
-        inquirer.Confirm('correct',  message='This will delete all your current labels and create a new ones. Continue?', default=False),
+        inquirer.Text('user',
+                      message="Please enter your github username",
+                      validate=lambda x, _: re.match(r'.+', _)),
+        inquirer.Password('password',
+                          message='Please enter your password',
+                          validate=lambda x, _: re.match(r'.+', _)),
+        inquirer.Text('repo',
+                      message='Please enter the repo name',
+                      validate=lambda x, _: re.match(r'.+', _)),
+        inquirer.Checkbox('topics',
+                          message='Please define your type of project?',
+                          choices=['common', 'backend', 'frontend']),
+        inquirer.Text('organization',
+                      message='If this is a repo from a organization please \
+                               enter the organization name, if not just leave \
+                               this blank'),
+        inquirer.Confirm('correct',
+                         message='This will delete all your current labels \
+                         and create a new ones. Continue?', default=False),
     ]
 
     answers = inquirer.prompt(questions)
 
-    print 'Debug:'
-    print answers
+    if not answers['correct']:
+        sys.exit('Bye')
 
-    # user = raw_input('Please enter your github username: ')
-    # password = getpass.getpass('Please enter your github password: ')
-    # repo = raw_input('Please enter the repo name: ')
-    # organization = raw_input('If this is a repo from a organization please enter the organization name, if not just press enter: ')
-
-    # sure = raw_input('\nPlease enter the word CHANGE to continue. This will delete all your current labels and create a new ones: ')
-
-    # if sure.upper() != 'CHANGE':
-    #     sys.exit('Bye')
-
-    # if user == '' or password == '' or repo == '':
-    #     sys.exit('Invalid input')
-
-    # main(user, password, repo, organization)
+    main(answers['user'],
+         answers['password'],
+         answers['repo'],
+         answers['topics'],
+         answers['organization'])

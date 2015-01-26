@@ -1,74 +1,92 @@
 [
   {
     "name": "meta issue",
-    "color": "000000"
+    "color": "000000",
+    "topics": ["common"]
   },
   {
     "name": "S",
-    "color": "888888"
+    "color": "888888",
+    "topics": ["common"]
   },
   {
     "name": "M",
-    "color": "888888"
+    "color": "888888",
+    "topics": ["common"]
   },
   {
     "name": "L",
-    "color": "444444"
+    "color": "444444",
+    "topics": ["common"]
   },
   {
     "name": "XL",
-    "color": "444444"
+    "color": "444444",
+    "topics": ["common"]
   },
   {
     "name": "php",
-    "color": "8892BF"
+    "color": "8892BF",
+    "topics": ["backend"]
   },
   {
     "name": "javascript",
-    "color": "FBCA04"
+    "color": "FBCA04",
+    "topics": ["frontend"]
   },
   {
     "name": "html+css",
-    "color": "009800"
+    "color": "009800",
+    "topics": ["frontend"]
   },
   {
     "name": "design",
-    "color": "EA00FF"
+    "color": "EA00FF",
+    "topics": ["frontend"]
   },
   {
     "name": "texts",
-    "color": "006B75"
+    "color": "006B75",
+    "topics": ["frontend"]
   },
   {
     "name": "media",
-    "color": "672699"
+    "color": "672699",
+    "topics": ["frontend"]
   },
   {
     "name": "testing",
-    "color": "1AB6EB"
+    "color": "1AB6EB",
+    "topics": ["backend", "frontend"]
   },
   {
     "name": "bug",
-    "color": "E11D21"
+    "color": "E11D21",
+    "topics": ["common"]
   },
   {
     "name": "proposal",
-    "color": "FFFF00"
+    "color": "FFFF00",
+    "topics": ["common"]
   },
   {
     "name": "question",
-    "color": "FF8000"
+    "color": "FF8000",
+    "topics": ["common"]
   },
   {
     "name": "waiting",
-    "color": "FF8000"
+    "color": "FF8000",
+    "topics": ["common"]
   },
   {
     "name": "wontfix",
-    "color": "FFFFFF"
+    "color": "FFFFFF",
+    "topics": ["common"]
   },
   {
     "name": "invalid",
-    "color": "DDDDDD"
+    "color": "DDDDDD",
+    "topics": ["common"]
   }
 ]
