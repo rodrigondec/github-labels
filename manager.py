@@ -89,12 +89,10 @@ if __name__ == '__main__':
                           message='Please define your type of project?',
                           choices=['common', 'backend', 'frontend']),
         inquirer.Text('organization',
-                      message='If this is a repo from a organization please \
-                               enter the organization name, if not just leave \
-                               this blank'),
+                      message='If this is a repo from a organization please enter the organization name, if not just leave this blank'),
         inquirer.Confirm('correct',
-                         message='This will delete all your current labels \
-                         and create a new ones. Continue?', default=False),
+                         message='This will delete all your current labels and create a new ones. Continue?',
+                         default=False),
     ]
 
     answers = inquirer.prompt(questions)
