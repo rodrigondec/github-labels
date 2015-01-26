@@ -5,43 +5,43 @@
   },
   {
     "name": "S",
-    "color": "000000"
+    "color": "999999"
   },
   {
     "name": "M",
-    "color": "000000"
+    "color": "777777"
   },
   {
     "name": "L",
-    "color": "000000"
+    "color": "555555"
   },
   {
     "name": "XL",
-    "color": "000000"
+    "color": "333333"
   },
   {
     "name": "php",
-    "color": "5319e7"
+    "color": "8892BF"
   },
   {
     "name": "javascript",
-    "color": "fc2929"
+    "color": "FBCA04"
   },
   {
     "name": "html+css",
-    "color": "bfdadc"
+    "color": "009800"
   },
   {
     "name": "design",
-    "color": "cccccc"
+    "color": "EA00FF"
   },
   {
     "name": "texts",
-    "color": "84b6eb"
+    "color": "006B75"
   },
   {
     "name": "media",
-    "color": "fbca04"
+    "color": "672699"
   },
   {
     "name": "testing",
@@ -49,26 +49,26 @@
   },
   {
     "name": "bug",
-    "color": "bfe5bf"
+    "color": "E11D21"
   },
   {
     "name": "proposal",
-    "color": "fad8c7"
+    "color": "FEF2C0"
   },
   {
     "name": "question",
-    "color": "cc317c"
+    "color": "FFC285"
   },
   {
     "name": "waiting",
-    "color": "fbca04"
+    "color": "EB6420"
   },
   {
     "name": "wontfix",
-    "color": "ffffff"
+    "color": "FFFFFF"
   },
   {
     "name": "invalid",
-    "color": "cccccc"
+    "color": "CCCCCC"
   }
 ]
