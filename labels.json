@@ -5,19 +5,19 @@
   },
   {
     "name": "S",
-    "color": "999999"
+    "color": "888888"
   },
   {
     "name": "M",
-    "color": "777777"
+    "color": "888888"
   },
   {
     "name": "L",
-    "color": "555555"
+    "color": "444444"
   },
   {
     "name": "XL",
-    "color": "333333"
+    "color": "444444"
   },
   {
     "name": "php",
@@ -45,7 +45,7 @@
   },
   {
     "name": "testing",
-    "color": "159818"
+    "color": "1AB6EB"
   },
   {
     "name": "bug",
@@ -53,15 +53,15 @@
   },
   {
     "name": "proposal",
-    "color": "FEF2C0"
+    "color": "FFFF00"
   },
   {
     "name": "question",
-    "color": "FFC285"
+    "color": "FF8000"
   },
   {
     "name": "waiting",
-    "color": "EB6420"
+    "color": "FF8000"
   },
   {
     "name": "wontfix",
@@ -69,6 +69,6 @@
   },
   {
     "name": "invalid",
-    "color": "CCCCCC"
+    "color": "DDDDDD"
   }
 ]
