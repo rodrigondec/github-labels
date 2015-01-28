@@ -86,7 +86,7 @@
   },
   {
     "name": "invalid",
-    "color": "DDDDDD",
+    "color": "FFFFFF",
     "topics": ["common"]
   }
 ]
