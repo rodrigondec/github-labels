@@ -7,7 +7,7 @@ import re
 try:
     import inquirer
     import requests
-except:
+except ImportError:
     sys.exit('Please install dependencies: pip install -r requirements.txt')
 
 
@@ -17,7 +17,7 @@ LABELS_FILE = 'labels.json'
 
 
 class LabelAPIError(Exception):
-    '''Base exception for errors'''
+    """Base exception for errors"""
     def __init__(self, message):
         self.message = message
 
@@ -26,7 +26,7 @@ class LabelAPIError(Exception):
 
 
 class LabelManager(object):
-    ''' Handles Github Label API '''
+    """ Handles Github Label API """
     def __init__(self, u, p, r, o):
         self.auth = (u, p)
 
@@ -53,15 +53,14 @@ class LabelManager(object):
             raise LabelAPIError(r.json()['message'])
 
 
-def main(user, password, repo, topics, organization=None):
+def main(user, password, repo, topics, organization=None, **kwargs):
     manager = LabelManager(user, password, repo, organization)
 
-    print
-    print 'Deleting current Labels'
+    print('Deleting current Labels')
     for label in manager.getAllLabels():
         manager.deleteLabel(label['url'])
 
-    print 'Creating new labels'
+    print('Creating new labels')
 
     newLabels = json.loads(open(LABELS_FILE).read())
 
@@ -69,9 +68,9 @@ def main(user, password, repo, topics, organization=None):
         if any(x in topics for x in label['topics']):
             manager.createLabel(label)
 
-    print
-    print '---'
-    print 'All OK. Check your labels here: {}'.format(manager.repoURL)
+    print('---')
+    print('All OK. Check your labels here: {}'.format(manager.repoURL))
+
 
 if __name__ == '__main__':
 
@@ -100,8 +99,4 @@ if __name__ == '__main__':
     if not answers['correct']:
         sys.exit('Bye')
 
-    main(answers['user'],
-         answers['password'],
-         answers['repo'],
-         answers['topics'],
-         answers['organization'])
+    main(**answers)
