@@ -1,33 +1,20 @@
 # Instalação
-É necessário ter algum python a cima da versão 3.6 siga a 
-[documentação oficial](https://www.python.org/downloads/) para instalar.
-
-## Criando um ambiente virtual
-Existem maneiras diferentes de fazer isso.
-
-Utilizando Python3.6, basta executar:
-
-    python3 -m venv {{nome_do_seu_venv}}
-
-Onde `{{nome_do_seu_venv}}` deve ser substituído por um nome de sua escolha.
-
-Agora, será necessário ativar este ambiente execute o comando referente ao seu SO:
-```shell script
-source {{nome_do_seu_venv}}/bin/activate
-```
-
-Para mais informações sobre o assunto, basta ler a [
-documentação oficial](https://docs.python.org/3/library/venv.html).
-
-## Instalando dependências
 ```shell script
 pip install -r requirements.txt
+```
+
+# Variáveis de ambiente
+Token é um personal token gerado no github https://github.com/settings/tokens
+```shell script
+TOKEN=random
+OWNER=random
+REPO=random
 ```
 
 # Executando
 basta executar o comendo
 ```shell script
-python manager.py
+python main.py
 ```
 
 # Referências
@@ -41,4 +28,5 @@ https://github.com/abdonrd/github-labels
 https://github.com/yoshuawuyts/github-standard-labels
 https://github.com/himynameisdave/git-labelmaker
 ## ferramentas
+https://pygithub.readthedocs.io/en/latest/introduction.html
 https://github.com/dwyl/labels
