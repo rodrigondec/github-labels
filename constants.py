@@ -3,7 +3,7 @@ import json
 from decouple import config
 
 TOKEN = config('TOKEN')
-OWNER = config('ORG')
+OWNER = config('OWNER')
 REPO = config('REPO')
 
 with open('labels.json') as json_file:
