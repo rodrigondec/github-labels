@@ -1,2 +1,2 @@
-inquirer==2
-requests==2.4.3
+python-decouple
+pygithub
