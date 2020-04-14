@@ -1,92 +1,21 @@
 [
-  {
-    "name": "meta issue",
-    "color": "000000",
-    "topics": ["common"]
-  },
-  {
-    "name": "S",
-    "color": "888888",
-    "topics": ["common"]
-  },
-  {
-    "name": "M",
-    "color": "888888",
-    "topics": ["common"]
-  },
-  {
-    "name": "L",
-    "color": "444444",
-    "topics": ["common"]
-  },
-  {
-    "name": "XL",
-    "color": "444444",
-    "topics": ["common"]
-  },
-  {
-    "name": "php",
-    "color": "8892BF",
-    "topics": ["backend"]
-  },
-  {
-    "name": "javascript",
-    "color": "FBCA04",
-    "topics": ["frontend"]
-  },
-  {
-    "name": "html+css",
-    "color": "009800",
-    "topics": ["frontend"]
-  },
-  {
-    "name": "design",
-    "color": "EA00FF",
-    "topics": ["frontend"]
-  },
-  {
-    "name": "texts",
-    "color": "006B75",
-    "topics": ["frontend"]
-  },
-  {
-    "name": "media",
-    "color": "672699",
-    "topics": ["frontend"]
-  },
-  {
-    "name": "testing",
-    "color": "1AB6EB",
-    "topics": ["backend", "frontend"]
-  },
-  {
-    "name": "bug",
-    "color": "E11D21",
-    "topics": ["common"]
-  },
-  {
-    "name": "proposal",
-    "color": "FFFF00",
-    "topics": ["common"]
-  },
-  {
-    "name": "question",
-    "color": "FF8000",
-    "topics": ["common"]
-  },
-  {
-    "name": "waiting",
-    "color": "FF8000",
-    "topics": ["common"]
-  },
-  {
-    "name": "wontfix",
-    "color": "FFFFFF",
-    "topics": ["common"]
-  },
-  {
-    "name": "invalid",
-    "color": "FFFFFF",
-    "topics": ["common"]
-  }
+  {"name": "Priority: Low", "color": "#009800"},
+  {"name": "Priority: Medium", "color": "#fbca04"},
+  {"name": "Priority: High", "color": "#eb6420"},
+  {"name": "Priority: Critical", "color": "#e11d21"},
+  {"name": "Status: Abandoned", "color": "#000000"},
+  {"name": "Status: Accepted", "color": "#009800"},
+  {"name": "Status: Available", "color": "#bfe5bf"},
+  {"name": "Status: Blocked", "color": "#e11d21"},
+  {"name": "Status: Completed", "color": "#006b75"},
+  {"name": "Status: In Progress", "color": "#cccccc"},
+  {"name": "Status: On Hold", "color": "#e11d21"},
+  {"name": "Status: Review Needed", "color": "#fbca04"},
+  {"name": "Status: Revision Needed", "color": "#e11d21"},
+  {"name": "Type: Bug", "color": "#e11d21"},
+  {"name": "Type: Maintenance", "color": "#fbca04"},
+  {"name": "Type: Enhancement", "color": "#84b6eb"},
+  {"name": "Type: Question", "color": "#cc317c"},
+  {"name": "¯\\_[ツ]_/¯", "color": "#FFC107"},
+  {"name": "[ノಠ益ಠ]ノ彡┻━┻", "color": "#333333"}
 ]
