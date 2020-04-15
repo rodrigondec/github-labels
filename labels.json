@@ -2,22 +2,22 @@
     {
         "name": "Priority: Critical",
         "color": "ee0701",
-        "description": "This should be dealt with ASAP. Not fixing this issue would be a serious error."
+        "description": "This should be dealt with ASAP. Not fixing this issue would be a serious error"
     },
     {
         "name": "Priority: High",
         "color": "d93f0b",
-        "description": "After critical issues are fixed, these should be dealt with before any further issues."
+        "description": "After critical issues are fixed, these should be dealt with before any further issues"
     },
     {
         "name": "Priority: Medium",
         "color": "fbca04",
-        "description": "This issue may be useful, and needs some attention."
+        "description": "This issue may be useful, and needs some attention"
     },
     {
         "name": "Priority: Low",
         "color": "0e8a16",
-        "description": "This issue can probably be picked up by anyone looking to contribute to the project, as an entry fix."
+        "description": "This issue can probably be picked up by anyone looking to contribute to the project, as an entry fix"
     },
     {
         "name": "Status: Abandoned",
@@ -72,7 +72,7 @@
     {
         "name": "Type: Feature",
         "color": "1d76db",
-        "description": "Most issues will probably ask for additions or changes. It's expected that this type of issue will result in a Pull Request."
+        "description": "Most issues will probably ask for additions or changes"
     },
     {
         "name": "Type: Refactoring",
@@ -87,7 +87,7 @@
     {
         "name": "Type: Maintenance",
         "color": "abd406",
-        "description": "Updating phrasing or wording to make things clearer or removing ambiguity, without changing the functionality."
+        "description": "Changes to make things clearer or removing ambiguity, without changing functionality"
     },
     {
         "name": "Type: CI",
@@ -97,7 +97,7 @@
     {
         "name": "Type: Question",
         "color": "cc317c",
-        "description": "A query or seeking clarification on parts of the spec. Probably doesn't need the attention of everyone, just a few to help bring clarification or explain intent."
+        "description": "A query or seeking clarification on parts of the spec."
     },
     {
         "name": "Type: Discussion",
@@ -111,12 +111,12 @@
     },
     {
         "name": "¯\\_[ツ]_/¯",
-        "color": "FFC107",
-        "description": "Sometimes there's so much discussion on an issue that it's no longer possible to determine what the actual issue is about anymore. As such, new issues should be created, mentioning directly this issue, and probably also specific comments. This issue (probably) won't be closed till the other related issues are resolved, and will probably be locked."
+        "color": "ffc107",
+        "description": "It's no longer possible to determine what the actual issue is about anymore"
     },
     {
         "name": "[ノಠ益ಠ]ノ彡┻━┻",
         "color": "333333",
-        "description": "Similarly, it seems impossible for people to agree on this issue, and there's been too much discussion for anyone to reasonably read through, understand, and make sense. It probably won't get locked, and people can continue discussing, but it should not be referenced by a PR. If someone wishes to make PRs based on this issue, they should create a new issue, explaining succinctly an issue that needs addressing."
+        "description": "It seems impossible for people to agree on this issue"
     }
 ]
