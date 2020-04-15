@@ -1,9 +1,9 @@
 from github import Github, GithubException
 
-from constants import TOKEN, OWNER, REPO, LABELS
+from constants import TOKEN, LABELS
 
 
-def create_or_update_labels(owner=OWNER, repo=REPO):
+def create_or_update_labels(owner, repo):
     g = Github(TOKEN)
 
     repo = g.get_repo(f"{owner}/{repo}")
@@ -18,7 +18,3 @@ def create_or_update_labels(owner=OWNER, repo=REPO):
                 color=label.get('color'),
                 description=label.get('description')
             )
-
-
-if __name__ == '__main__':
-    create_or_update_labels()
