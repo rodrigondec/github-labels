@@ -4,6 +4,7 @@ from constants import TOKEN, LABELS
 
 
 def create_or_update_labels(owner, repo):
+    print('Createing or updating labels!!')
     g = Github(TOKEN)
 
     repo = g.get_repo(f"{owner}/{repo}")
@@ -18,3 +19,12 @@ def create_or_update_labels(owner, repo):
                 color=label.get('color'),
                 description=label.get('description')
             )
+
+
+def delete_existing_labels(owner, repo):
+    print('Deleting old labels!!!')
+    g = Github(TOKEN)
+
+    repo = g.get_repo(f"{owner}/{repo}")
+    for label in repo.get_labels():
+        label.delete()
