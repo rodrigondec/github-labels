@@ -17,7 +17,7 @@
     {
         "name": "Prioridade: Baixa",
         "color": "0e8a16",
-        "description": "Esse issue provavélmente pode ser pego por qualquer pessoa querendo contribuir com o projeto pela primeira vez"
+        "description": "Uma issue que pode ser um bom primeiro contato para contribuir"
     },
     {
         "name": "Status: Abandonado",
