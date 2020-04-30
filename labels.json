@@ -1,6 +1,6 @@
 [
     {
-        "name": "Prioridade: Crítico",
+        "name": "Prioridade: Crítica",
         "color": "ee0701",
         "description": "Isso deve ser resolvido IMEDIATAMENTE. Não ajeitar isso pode ocasionar problemas serios"
     },
@@ -10,7 +10,7 @@
         "description": "Após issues críticos resolvidos, isso deveria ser feito antes de prosseguir"
     },
     {
-        "name": "Prioridade: Médio",
+        "name": "Prioridade: Média",
         "color": "fbca04",
         "description": "Esse issue pode ser útil e precisa de alguma atenção"
     },

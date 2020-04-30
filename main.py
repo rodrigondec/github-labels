@@ -13,7 +13,7 @@ def create_or_update_labels(owner, repo):
         try:
             repo.create_label(**label)
         except GithubException as e:
-            print(e)
+            # print(e)
             repo_label = repo.get_label(label.get('name'))
             repo_label.edit(
                 name=repo_label.name,
@@ -21,7 +21,7 @@ def create_or_update_labels(owner, repo):
                 description=label.get('description')
             )
         except Exception as e:
-            print(e)
+            # print(e)
             raise e
 
 

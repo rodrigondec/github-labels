@@ -2,8 +2,7 @@ from main import create_or_update_labels, delete_existing_labels
 
 owner = 'imobanco'
 repos = [
-    'income-back', 'zoop-wrapper',
-    'autoatendimento', 'pyCNAB240'
+    'income-back', 'zoop-wrapper', 'autoatendimento', 'pyCNAB240'
 ]
 
 for repo in repos:
