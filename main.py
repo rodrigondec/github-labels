@@ -4,7 +4,7 @@ from constants import TOKEN, LABELS
 
 
 def create_or_update_labels(owner, repo):
-    print('Createing or updating labels!!')
+    print('Creating or updating labels!!')
     g = Github(TOKEN)
 
     repo = g.get_repo(f"{owner}/{repo}")
