@@ -80,67 +80,67 @@
         "description": "Esse PR está aprovado e pronto para ser mergeado"
     },
     {
-        "name": "Tipo: Mudança Titânica",
+        "name": "Tipo: Mudança Titânica :ship:",
         "color": "b60205",
         "description": "Inclui muitas mudanças ou mudanças drásticas"
     },
     {
-        "name": "Tipo: Bug",
+        "name": "Tipo: Bug :bug:",
         "color": "ee0701",
         "description": "Falha ou correção"
     },
     {
-        "name": "Tipo: Documentação",
+        "name": "Tipo: Documentação :book:",
         "color": "5319e7",
         "description": "Modificação apenas na documentação"
     },
     {
-        "name": "Tipo: Funcionalidade",
+        "name": "Tipo: Funcionalidade :gem:",
         "color": "1d76db",
         "description": "Proposta ou funcionalidade"
     },
     {
-        "name": "Tipo: Refatoração",
+        "name": "Tipo: Refatoração :recycle:",
         "color": "fbca04",
         "description": "Uma mudança que não é nem uma correção nem uma funcionalidade"
     },
     {
-        "name": "Tipo: Testando",
+        "name": "Tipo: Testando :hammer:",
         "color": "257759",
         "description": "Adicionando testes que faltam ou corrigindo testes"
     },
     {
-        "name": "Tipo: Manuntenção",
+        "name": "Tipo: Manuntenção :wrench:",
         "color": "abd406",
         "description": "Mudanças para deixar as coisas mais claras ou removendo ambiguidade, sem alterar o comportamento"
     },
     {
-        "name": "Tipo: CI",
+        "name": "Tipo: CI :robot:",
         "color": "ffd412",
         "description": "Mudanças na configuração do CI e scripts"
     },
     {
-        "name": "Tipo: Questão",
+        "name": "Tipo: Questão :grey_question:",
         "color": "cc317c",
         "description": "Uma pergunta"
     },
     {
-        "name": "Tipo: Discussão",
+        "name": "Tipo: Discussão :speech_balloon:",
         "color": "d4c5f9",
         "description": "Discussão sobre mudanças ou decisões"
     },
     {
-        "name": "Tipo: Épico",
+        "name": "Tipo: Épico :space_invader:",
         "color": "3E4B9E",
         "description": "Uma tarefa complexa que contém sub tarefas"
     },
     {
-        "name": "Tipo: Performance",
+        "name": "Tipo: Performance :hourglass:",
         "color": "ee0701",
         "description": "Essa issue/PR está relacionado a melhorias de performance"
     },
     {
-        "name": "Tipo: Externo",
+        "name": "Tipo: Externo :alien:",
         "color": "ee0701",
         "description": "Esse problema não foi minha culpa"
     },
