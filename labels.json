@@ -2,7 +2,7 @@
     {
         "name": "Prioridade: Crítica",
         "color": "ee0701",
-        "description": "Isso deve ser resolvido IMEDIATAMENTE. Não ajeitar isso pode ocasionar problemas serios"
+        "description": "Isso deve ser resolvido IMEDIATAMENTE. Não ajeitar isso pode ocasionar problemas sérios"
     },
     {
         "name": "Prioridade: Alta",
@@ -52,32 +52,32 @@
     {
         "name": "Status: NÃO MERGEAR!",
         "color": "ff0000",
-        "description": "Mesmo que tudo esteja verde, não faça o merge deste PR."
+        "description": "Mesmo que tudo esteja verde, não faça o merge deste PR"
     },
     {
         "name": "Status: Duplicado",
         "color": "ee0701",
-        "description": "Essa issue já existe."
+        "description": "Essa issue já existe"
     },
     {
         "name": "Status: Fora do Plano",
         "color": "ee0701",
-        "description": "Essa sugestão não está dentro dos nossos planos, mas pode estar no futuro ;)."
+        "description": "Essa sugestão não está dentro dos nossos planos, mas pode estar no futuro ;)"
     },
     {
         "name": "Status: Pronto para implementar",
         "color": "ee0701",
-        "description": "Essa issue já possui todos os detalhes técnicos necessários para ser feita."
+        "description": "Essa issue já possui todos os detalhes técnicos necessários para ser feita"
     },
     {
         "name": "Status: Ajuda bem vinda",
         "color": "ee0701",
-        "description": "Essa issue está aberta para a comunidade trabalhar."
+        "description": "Essa issue está aberta para a comunidade trabalhar"
     },
     {
         "name": "Status: Aprovado",
         "color": "ee0701",
-        "description": "Esse PR está aprovado e pronto para ser mergeado."
+        "description": "Esse PR está aprovado e pronto para ser mergeado"
     },
     {
         "name": "Tipo: Mudança Titânica",
@@ -137,62 +137,62 @@
     {
         "name": "Tipo: Performance",
         "color": "ee0701",
-        "description": "Essa issue/PR está relacionado a melhorias de performance."
+        "description": "Essa issue/PR está relacionado a melhorias de performance"
     },
     {
         "name": "Tipo: Externo",
         "color": "ee0701",
-        "description": "Esse problema não foi minha culpa."
+        "description": "Esse problema não foi minha culpa"
     },
     {
         "name": "e/1 🕑",
         "color": "ee0701",
-        "description": "Esforço 1."
+        "description": "Esforço 1"
     },
     {
         "name": "e/2 🕑",
         "color": "ee0701",
-        "description": "Esforço 2."
+        "description": "Esforço 2"
     },
     {
         "name": "e/3 🕑",
         "color": "ee0701",
-        "description": "Esforço 3."
+        "description": "Esforço 3"
     },
     {
         "name": "e/4 🕑",
         "color": "ee0701",
-        "description": "Esforço 4."
+        "description": "Esforço 4"
     },
     {
         "name": "e/5 🕑",
         "color": "ee0701",
-        "description": "Esforço 5."
+        "description": "Esforço 5"
     },
     {
         "name": "e/6 🕑",
         "color": "ee0701",
-        "description": "Esforço 6."
+        "description": "Esforço 6"
     },
     {
         "name": "e/7 🕑",
         "color": "ee0701",
-        "description": "Esforço 7."
+        "description": "Esforço 7"
     },
     {
         "name": "e/8 🕑",
         "color": "ee0701",
-        "description": "Esforço 8."
+        "description": "Esforço 8"
     },
     {
         "name": "e/9 🕑",
         "color": "ee0701",
-        "description": "Esforço 9."
+        "description": "Esforço 9"
     },
     {
         "name": "e/10 🕑",
         "color": "ee0701",
-        "description": "Esforço 10."
+        "description": "Esforço 10"
     },
     {
         "name": "¯\\_[ツ]_/¯",
